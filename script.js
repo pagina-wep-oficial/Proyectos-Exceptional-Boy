@@ -61,7 +61,8 @@
   }
 
   /* ================= reveal al hacer scroll ================= */
-  var targets = document.querySelectorAll('.card, .steps li, .feat, .section-head, .cta, .toolbar');
+  /* las tarjetas se revelan aparte, con el riel como raiz (horizontal) */
+  var targets = document.querySelectorAll('.steps li, .feat, .section-head, .cta, .toolbar');
   if (reduce || !('IntersectionObserver' in window)) {
     targets.forEach(function (el) { el.classList.add('rv', 'in'); });
   } else {
@@ -117,6 +118,39 @@
   var track = document.getElementById('railThumb');
 
   if (rail) {
+    /* En un riel horizontal el observador de ventana no sirve: las tarjetas de
+       la derecha nunca "entran" y se quedan invisibles. Aqui la raiz es el riel,
+       y ademas se comprueba a mano en cada scroll para que nada quede oculto. */
+    rail.querySelectorAll('.card').forEach(function (c) { c.classList.add('rv'); });
+    if (reduce || !('IntersectionObserver' in window)) {
+      rail.querySelectorAll('.card').forEach(function (c) { c.classList.add('in'); });
+    } else {
+      var ioCards = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); ioCards.unobserve(e.target); }
+        });
+      }, { root: rail, rootMargin: '0px 70px 0px 70px', threshold: 0.12 });
+      rail.querySelectorAll('.card').forEach(function (c) { ioCards.observe(c); });
+    }
+
+    function revealInRail() {
+      var r = rail.getBoundingClientRect();
+      var pend = rail.querySelectorAll('.card.rv:not(.in)');
+      for (var i = 0; i < pend.length; i++) {
+        var b = pend[i].getBoundingClientRect();
+        if (b.right > r.left - 70 && b.left < r.right + 70) { pend[i].classList.add('in'); }
+      }
+    }
+    rail.addEventListener('scroll', revealInRail, { passive: true });
+    window.addEventListener('load', revealInRail);
+    window.addEventListener('resize', revealInRail);
+    revealInRail();
+
+    /* red de seguridad: pase lo que pase, ninguna tarjeta se queda invisible */
+    setTimeout(function () {
+      rail.querySelectorAll('.card.rv:not(.in)').forEach(function (c) { c.classList.add('in'); });
+    }, 3500);
+
     /* los <a> son arrastrables por defecto: el drag nativo cancela el puntero */
     rail.addEventListener('dragstart', function (e) { e.preventDefault(); });
 

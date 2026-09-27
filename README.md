@@ -4,7 +4,10 @@ Portafolio público de los sitios web que creamos y publicamos para negocios
 locales de Hopelchén y la región. Cada tarjeta abre un sitio independiente que
 está funcionando en línea.
 
-**En línea:** https://project-build.pages.dev
+**En línea:** https://project-build-9vt.pages.dev
+
+> El subdominio `project-build.pages.dev` ya estaba ocupado en Cloudflare, por eso
+> el sitio quedó en `project-build-9vt.pages.dev`.
 
 ## Qué hay aquí
 

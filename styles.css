@@ -244,7 +244,6 @@ p{margin:0}
 }
 .card-stage .phone::before{top:7px;height:4px;width:30%;background:rgba(0,0,0,.45)}
 .card-stage .phone-screen{border-radius:11px}
-.card:hover .card-stage .phone{transform:translateY(-5px) scale(1.045)}
 .card-glow{
   position:absolute;left:50%;bottom:-38%;transform:translateX(-50%);
   width:78%;height:78%;border-radius:50%;filter:blur(28px);opacity:.5;
@@ -270,6 +269,30 @@ p{margin:0}
 .card:hover .card-go svg{transform:translate(3px,-3px)}
 .card.is-hidden{display:none}
 .empty{text-align:center;color:var(--muted);padding:2.8rem 0}
+
+/* ================= movimiento en pantallas tactiles ================= */
+/* en celular no hay :hover, asi que el movimiento tiene que ser continuo */
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+@keyframes sheen{0%{transform:translateX(-130%) skewX(-20deg)}60%,100%{transform:translateX(130%) skewX(-20deg)}}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+
+.card-stage .phone{animation:float 5.6s var(--ease) infinite alternate}
+.card:nth-child(2n) .card-stage .phone{animation-duration:6.5s;animation-delay:-1.3s}
+.card:nth-child(3n) .card-stage .phone{animation-duration:7.3s;animation-delay:-2.6s}
+.card:hover .card-stage .phone{animation-play-state:paused;scale:1.05}
+
+.card-stage::after{
+  content:"";position:absolute;top:0;bottom:0;left:0;width:40%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.26),transparent);
+  animation:sheen 7s var(--ease) infinite;
+}
+.card:nth-child(2n) .card-stage::after{animation-duration:8.4s;animation-delay:-3s}
+
+.rail-hint svg{animation:nudge 1.9s var(--ease) infinite}
+.marquee .phone{animation:float 6.8s var(--ease) infinite alternate}
+
+/* la respuesta al dedo se define al final del archivo: .rv.in{transform:none}
+   aparece despues y, con la misma especificidad, anulaba el :active */
 
 /* ================= proceso ================= */
 .steps{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:clamp(.9rem,2.2vw,1.25rem);grid-template-columns:repeat(auto-fit,minmax(215px,1fr));counter-reset:s}
@@ -345,3 +368,11 @@ p{margin:0}
   .rv{opacity:1;transform:none}
   .marquee-run{animation:none;transform:none}
 }
+
+/* ================= respuesta al dedo =================
+   va al final a proposito: .rv.in{transform:none} esta mas abajo en el archivo
+   y con igual especificidad se comia el :active de las tarjetas */
+.card:active{transform:scale(.965)}
+.chip:active{transform:scale(.95)}
+.rail-btn:active{transform:scale(.9)}
+.btn:active,.cta a:active,.marquee .phone:active{transform:scale(.96)}
