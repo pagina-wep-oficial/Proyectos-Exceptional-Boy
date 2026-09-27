@@ -4,20 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Proyectos Exceptional Boy | Páginas de demostración</title>
-<meta name="description" content="Muestra real de los sitios web que hemos creado para negocios locales: restaurantes, cafeterías, hoteles, clínicas y tiendas. Páginas de demostración hechas con Exceptional Boy.">
-<meta name="theme-color" content="#0B0B10">
+<meta name="description" content="Muestra real de los sitios web que creamos para negocios locales: restaurantes, cafeterías, hoteles, clínicas y tiendas. Páginas de demostración hechas con Exceptional Boy.">
+<meta name="theme-color" content="#08080C">
 <meta property="og:title" content="Proyectos Exceptional Boy">
 <meta property="og:description" content="Páginas de demostración de sitios web para negocios locales.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FF9F1C'/><text x='50' y='68' font-size='54' font-family='sans-serif' font-weight='bold' fill='%230B0B10' text-anchor='middle'>E</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FF8A1F'/><text x='50' y='69' font-size='56' font-family='sans-serif' font-weight='bold' fill='%2308080C' text-anchor='middle'>E</text></svg>">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="glow" aria-hidden="true"></div>
+<div class="aura" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
 
 <header class="topbar">
   <a class="brand" href="#top">
@@ -27,280 +28,403 @@
       <small>Proyectos</small>
     </span>
   </a>
-  <a class="btn btn-ghost btn-sm" href="https://excepcional-build.pages.dev" target="_blank" rel="noopener">
-    Quiero el mío
-  </a>
+  <nav class="topnav">
+    <a href="#demos">Demos</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#incluye">Incluye</a>
+  </nav>
+  <a class="btn btn-primary btn-sm" href="https://excepcional-build.pages.dev" target="_blank" rel="noopener">Quiero el mío</a>
 </header>
 
 <main id="top">
 
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <p class="eyebrow"><span class="dot"></span> Portafolio real · sitios ya en línea</p>
+    <p class="eyebrow"><span class="dot"></span> Portafolio real · 17 sitios en línea</p>
     <h1 class="hero-title">Proyectos <span class="grad">Exceptional Boy</span></h1>
     <p class="hero-lead">
       Estos son sitios web que creamos y publicamos para negocios reales de Hopelchén
-      y la región. Ábrelos, recórrelos y comprueba que sí sabemos hacer el trabajo.
-      Todo lo que ves aquí está funcionando en línea ahora mismo.
+      y la región. Todos están funcionando en línea ahora mismo: ábrelos, recórrelos
+      y comprueba que sí sabemos hacer el trabajo.
     </p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#demos">Ver las páginas</a>
       <a class="btn btn-ghost" href="https://excepcional-build.pages.dev" target="_blank" rel="noopener">Cotizar mi sitio</a>
     </div>
     <ul class="hero-stats">
-      <li><strong data-count="19">0</strong><span>Sitios publicados</span></li>
-      <li><strong data-count="6">0</strong><span>Categorías</span></li>
-      <li><strong>100<span>%</span></strong><span>Hechos a medida</span></li>
+      <li><strong><span data-count="17">0</span></strong><span>Sitios publicados</span></li>
+      <li><strong><span data-count="6">0</span></strong><span>Categorías</span></li>
+      <li><strong><span data-count="17">0</span></strong><span>Con menu y pedidos</span></li>
     </ul>
   </section>
 
+  <!-- ============ MARQUEE ============ -->
+  <section class="strip" aria-label="Vista previa de sitios entregados">
+    <div class="strip-fade strip-fade-l" aria-hidden="true"></div>
+    <div class="strip-fade strip-fade-r" aria-hidden="true"></div>
+    <div class="marquee" id="marquee">
+      <div class="marquee-run">
+        <a class="phone" href="https://cocteler-a-el-pescadito.pages.dev" target="_blank" rel="noopener" aria-label="Coctelería El Pescadito"><span class="phone-screen"><img src="thumbs/cocteler-a-el-pescadito.jpg" alt="Coctelería El Pescadito" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://hotelchenes.pages.dev" target="_blank" rel="noopener" aria-label="Hotel Los Chenes"><span class="phone-screen"><img src="thumbs/hotelchenes.jpg" alt="Hotel Los Chenes" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://la-capilla.pages.dev" target="_blank" rel="noopener" aria-label="La Capilla"><span class="phone-screen"><img src="thumbs/la-capilla.jpg" alt="La Capilla" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://cygr.pages.dev" target="_blank" rel="noopener" aria-label="CYGR"><span class="phone-screen"><img src="thumbs/cygr.jpg" alt="CYGR" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://odentica-hopelchen.pages.dev" target="_blank" rel="noopener" aria-label="Odentica Hopelchén"><span class="phone-screen"><img src="thumbs/odentica-hopelchen.jpg" alt="Odentica Hopelchén" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://monster-delicacies.pages.dev" target="_blank" rel="noopener" aria-label="Monster Delicacies"><span class="phone-screen"><img src="thumbs/monster-delicacies.jpg" alt="Monster Delicacies" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://don-bonelito.pages.dev" target="_blank" rel="noopener" aria-label="Don Bonelito"><span class="phone-screen"><img src="thumbs/don-bonelito.jpg" alt="Don Bonelito" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://sendero-s.pages.dev" target="_blank" rel="noopener" aria-label="Sendero's"><span class="phone-screen"><img src="thumbs/sendero-s.jpg" alt="Sendero's" loading="lazy" decoding="async"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEMOS ============ -->
   <section class="demos" id="demos">
     <div class="section-head">
+      <span class="kicker">Portafolio</span>
       <h2 class="section-title">Páginas de demostración</h2>
-      <p class="section-sub">Toca cualquier tarjeta para abrir el sitio completo.</p>
+      <p class="section-sub">Toca cualquier tarjeta para abrir el sitio completo en una pestaña nueva.</p>
     </div>
 
-    <nav class="filters" id="filters" aria-label="Filtrar por categoría">
-      <button class="chip is-active" data-filter="all">Todos</button>
-      <button class="chip" data-filter="restaurantes">Restaurantes</button>
-      <button class="chip" data-filter="comida">Cafeterías y panaderías</button>
-      <button class="chip" data-filter="hoteles">Hoteles</button>
-      <button class="chip" data-filter="salud">Salud</button>
-      <button class="chip" data-filter="servicios">Servicios</button>
-      <button class="chip" data-filter="tiendas">Tiendas</button>
-    </nav>
+    <div class="toolbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="q" placeholder="Buscar proyecto…" aria-label="Buscar proyecto" autocomplete="off">
+      </div>
+      <nav class="filters" id="filters" aria-label="Filtrar por categoría">
+        <button class="chip is-active" data-filter="all">Todos <span class="n">17</span></button>
+        <button class="chip" data-filter="restaurantes">Restaurantes <span class="n">10</span></button>
+        <button class="chip" data-filter="comida">Cafeterías <span class="n">2</span></button>
+        <button class="chip" data-filter="hoteles">Hoteles <span class="n">1</span></button>
+        <button class="chip" data-filter="salud">Salud <span class="n">2</span></button>
+        <button class="chip" data-filter="servicios">Servicios <span class="n">1</span></button>
+        <button class="chip" data-filter="tiendas">Tiendas <span class="n">1</span></button>
+      </nav>
+    </div>
 
     <div class="grid" id="grid">
 
-      <a class="card" data-cat="restaurantes" href="https://pizzas-claaudiss.pages.dev" target="_blank" rel="noopener" style="--g1:#FF9F1C;--g2:#E8590C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Pizzas Claaudiss" src="thumbs/pizzas-claaudiss.jpg"></span>
-        <span class="card-body">
-          <span class="tag">Restaurante</span>
-          <h3>Pizzas Claaudiss</h3>
-          <p>Pizzería con menú digital y pedidos directos por WhatsApp.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <a class="card" data-cat="restaurantes" data-name="cocteleria el pescadito mariscos camarón" href="https://cocteler-a-el-pescadito.pages.dev" target="_blank" rel="noopener" style="--g1:#0CA9A9;--g2:#086F8C">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Coctelería El Pescadito" src="thumbs/cocteler-a-el-pescadito.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
         </span>
-      </a>
-
-      <a class="card" data-cat="restaurantes" href="https://cocteler-a-el-pescadito.pages.dev" target="_blank" rel="noopener" style="--g1:#0CA9A9;--g2:#086F8C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Coctelería El Pescadito" src="thumbs/cocteler-a-el-pescadito.jpg"></span>
         <span class="card-body">
           <span class="tag">Mariscos</span>
           <h3>Coctelería El Pescadito</h3>
           <p>Cocteles de camarón, ensaladas, aguachiles y desayunos.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://el-rey-del-peperoni.pages.dev" target="_blank" rel="noopener" style="--g1:#E03131;--g2:#9C1010">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio El Rey del Peperoni" src="thumbs/el-rey-del-peperoni.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="rey del peperoni pizzeria pizza" href="https://el-rey-del-peperoni.pages.dev" target="_blank" rel="noopener" style="--g1:#E03131;--g2:#9C1010">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio El Rey del Peperoni" src="thumbs/el-rey-del-peperoni.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Pizzería</span>
           <h3>El Rey del Peperoni</h3>
           <p>Pizzas recién horneadas y combinaciones para compartir.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://hoolkuum.pages.dev" target="_blank" rel="noopener" style="--g1:#F59F00;--g2:#B45F06">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio HoolKuum" src="thumbs/hoolkuum.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="hoolkuum comida mexicana italiana birria" href="https://hoolkuum.pages.dev" target="_blank" rel="noopener" style="--g1:#F59F00;--g2:#B45F06">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio HoolKuum" src="thumbs/hoolkuum.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Restaurante</span>
           <h3>HoolKuum</h3>
           <p>Comida mexicana e italiana: birria, desayunos y pizzas.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://don-bonelito.pages.dev" target="_blank" rel="noopener" style="--g1:#FA5252;--g2:#C92A2A">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Don Bonelito" src="thumbs/don-bonelito.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="don bonelito boneless alitas hamburguesas" href="https://don-bonelito.pages.dev" target="_blank" rel="noopener" style="--g1:#FA5252;--g2:#C92A2A">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Don Bonelito" src="thumbs/don-bonelito.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Restaurante</span>
           <h3>Don Bonelito</h3>
           <p>Boneless, alitas, hamburguesas, entradas y bebidas.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://la-palapa.pages.dev" target="_blank" rel="noopener" style="--g1:#2F9E44;--g2:#186A2C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio La Palapa" src="thumbs/la-palapa.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="la palapa restaurante menu" href="https://la-palapa.pages.dev" target="_blank" rel="noopener" style="--g1:#2F9E44;--g2:#186A2C">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio La Palapa" src="thumbs/la-palapa.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Restaurante</span>
           <h3>La Palapa</h3>
-          <p>Restaurante con menú, ubicación y contacto directo.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p>Menú, ubicación y contacto directo.</p>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://la-capilla-8p4.pages.dev" target="_blank" rel="noopener" style="--g1:#7048E8;--g2:#3B2A80">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio La Capilla" src="thumbs/la-capilla.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="la capilla restaurante de autor galeria" href="https://la-capilla-8p4.pages.dev" target="_blank" rel="noopener" style="--g1:#7048E8;--g2:#3B2A80">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio La Capilla" src="thumbs/la-capilla.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Restaurante</span>
           <h3>La Capilla</h3>
           <p>Restaurante de autor con menú completo y galería.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://el-camaron-feliz.pages.dev" target="_blank" rel="noopener" style="--g1:#1098AD;--g2:#0B6474">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio El Camarón Feliz" src="thumbs/el-camaron-feliz.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="el camaron feliz mariscos comida marina" href="https://el-camaron-feliz.pages.dev" target="_blank" rel="noopener" style="--g1:#1098AD;--g2:#0B6474">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio El Camarón Feliz" src="thumbs/el-camaron-feliz.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Mariscos</span>
           <h3>El Camarón Feliz</h3>
           <p>Comida marina con menú y pedidos por WhatsApp.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://monster-delicacies.pages.dev" target="_blank" rel="noopener" style="--g1:#845EF7;--g2:#4C2A9E">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Monster Delicacies" src="thumbs/monster-delicacies.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="monster delicacies boneless burgers snacks" href="https://monster-delicacies.pages.dev" target="_blank" rel="noopener" style="--g1:#845EF7;--g2:#4C2A9E">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Monster Delicacies" src="thumbs/monster-delicacies.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Restaurante</span>
           <h3>Monster Delicacies</h3>
           <p>Boneless, alitas, burgers, papas, snacks y bebidas.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://demo1-3d3.pages.dev" target="_blank" rel="noopener" style="--g1:#E8590C;--g2:#932F0C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Asadero El Pollo" src="thumbs/demo1.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="asadero el pollo pollo asado carbon" href="https://demo1-3d3.pages.dev" target="_blank" rel="noopener" style="--g1:#E8590C;--g2:#932F0C">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Asadero El Pollo" src="thumbs/demo1.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Asadero</span>
           <h3>Asadero El Pollo</h3>
-          <p>Pollos asados al carbón estilo Sinaloa para llevar o comer aquí.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p>Pollos asados al carbón estilo Sinaloa, para llevar o comer aquí.</p>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="restaurantes" href="https://demo2-2ow.pages.dev" target="_blank" rel="noopener" style="--g1:#F76707;--g2:#A03000">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Pizzas Claaudiss, versión demo" src="thumbs/demo2.jpg"></span>
+      <a class="card" data-cat="restaurantes" data-name="demo segunda version carrito" href="https://demo2-2ow.pages.dev" target="_blank" rel="noopener" style="--g1:#F76707;--g2:#A03000">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura de la versión demo con menú y carrito" src="thumbs/demo2.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Demo</span>
-          <h3>Pizzas Claaudiss <span class="muted">(demo)</span></h3>
-          <p>Segunda versión del sitio, con el menú y el carrito ya funcionando.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <h3>Menú con carrito <span class="muted">(demo)</span></h3>
+          <p>Segunda versión: el cliente arma su pedido y lo manda por WhatsApp.</p>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="comida" href="https://cafeteria-del-parque.pages.dev" target="_blank" rel="noopener" style="--g1:#D6336C;--g2:#8C1F45">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Cafetería del Parque" src="thumbs/cafeteria-del-parque.jpg"></span>
+      <a class="card" data-cat="comida" data-name=" cafeteria del parque bebidas frias baguettes" href="https://cafeteria-del-parque.pages.dev" target="_blank" rel="noopener" style="--g1:#D6336C;--g2:#8C1F45">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Cafetería del Parque" src="thumbs/cafeteria-del-parque.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Cafetería</span>
           <h3>Cafetería del Parque</h3>
           <p>Bebidas frías, baguettes y promociones del día.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="comida" href="https://sendero-s.pages.dev" target="_blank" rel="noopener" style="--g1:#C2255C;--g2:#7C1038">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Panadería y Pizzería Sendero's" src="thumbs/sendero-s.jpg"></span>
+      <a class="card" data-cat="comida" data-name="senderos panaderia pizzeria pan" href="https://sendero-s.pages.dev" target="_blank" rel="noopener" style="--g1:#C2255C;--g2:#7C1038">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Panadería y Pizzería Sendero's" src="thumbs/sendero-s.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Panadería</span>
           <h3>Sendero's</h3>
           <p>Panadería y pizzería con menú y pedidos en línea.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="hoteles" href="https://hotelchenes.pages.dev" target="_blank" rel="noopener" style="--g1:#1971C2;--g2:#0C3F73">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Hotel Los Chenes" src="thumbs/hotelchenes.jpg"></span>
+      <a class="card" data-cat="hoteles" data-name="hotel los chenes hospedaje habitaciones" href="https://hotelchenes.pages.dev" target="_blank" rel="noopener" style="--g1:#1971C2;--g2:#0C3F73">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Hotel Los Chenes" src="thumbs/hotelchenes.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Hotel</span>
           <h3>Hotel Los Chenes</h3>
           <p>Habitaciones cómodas, ambiente tranquilo y áreas verdes.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="salud" href="https://odentica-hopelchen.pages.dev" target="_blank" rel="noopener" style="--g1:#0CA678;--g2:#085A43">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Odentica Hopelchén" src="thumbs/odentica-hopelchen.jpg"></span>
+      <a class="card" data-cat="salud" data-name="odentica odontologia dental clinica" href="https://odentica-hopelchen.pages.dev" target="_blank" rel="noopener" style="--g1:#0CA678;--g2:#085A43">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Odentica Hopelchén" src="thumbs/odentica-hopelchen.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Odontología</span>
           <h3>Odentica Hopelchén</h3>
           <p>Atención dental para niños, adolescentes y adultos.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="salud" href="https://umyr.pages.dev" target="_blank" rel="noopener" style="--g1:#1098AD;--g2:#075B69">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Unidad Médica y Radiológica" src="thumbs/umyr.jpg"></span>
+      <a class="card" data-cat="salud" data-name="umyr unidad medica radiologica clinica rayos x" href="https://umyr.pages.dev" target="_blank" rel="noopener" style="--g1:#1098AD;--g2:#075B69">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Unidad Médica y Radiológica" src="thumbs/umyr.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Clínica</span>
           <h3>UMyR</h3>
-          <p>Unidad médica y radiológica: consulta, rayos X y ultrasonido.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p>Consulta médica, especialistas, rayos X y ultrasonido.</p>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="servicios" href="https://cygr.pages.dev" target="_blank" rel="noopener" style="--g1:#F08C00;--g2:#9C5A00">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio CYGR" src="thumbs/cygr.jpg"></span>
+      <a class="card" data-cat="servicios" data-name="cygr grabados laser corte laser personalizados" href="https://cygr.pages.dev" target="_blank" rel="noopener" style="--g1:#F08C00;--g2:#9C5A00">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio CYGR" src="thumbs/cygr.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
+        </span>
         <span class="card-body">
           <span class="tag">Grabados láser</span>
           <h3>CYGR</h3>
           <p>Cortes y grabados láser, termos, letreros y artículos personalizados.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
-      <a class="card" data-cat="servicios" href="https://perfil-f2v.pages.dev" target="_blank" rel="noopener" style="--g1:#4C6EF5;--g2:#2B3A8C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del portafolio de Francisco Ontiveros" src="thumbs/perfil.jpg"></span>
-        <span class="card-body">
-          <span class="tag">Portafolio</span>
-          <h3>Francisco Ontiveros</h3>
-          <p>Sitio personal con casos de estudio y servicios digitales.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <a class="card" data-cat="tiendas" data-name="bonishop tienda en linea catalogo carrito" href="https://bonishop.pages.dev" target="_blank" rel="noopener" style="--g1:#E8590C;--g2:#8A2B0C">
+        <span class="card-stage">
+          <span class="phone">
+            <span class="phone-screen"><img loading="lazy" decoding="async" alt="Captura del sitio Bonishop" src="thumbs/bonishop.jpg"></span>
+          </span>
+          <span class="card-glow" aria-hidden="true"></span>
         </span>
-      </a>
-
-      <a class="card" data-cat="tiendas" href="https://bonishop.pages.dev" target="_blank" rel="noopener" style="--g1:#E8590C;--g2:#8A2B0C">
-        <span class="card-media"><img loading="lazy" decoding="async" alt="Captura del sitio Bonishop" src="thumbs/bonishop.jpg"></span>
         <span class="card-body">
           <span class="tag">Tienda</span>
           <h3>Bonishop</h3>
           <p>Tienda en línea con catálogo, carrito y pedidos.</p>
-          <span class="card-go">Ver demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="card-go">Ver el sitio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </span>
       </a>
 
     </div>
 
-    <p class="empty" id="empty" hidden>No hay proyectos en esa categoría.</p>
+    <p class="empty" id="empty" hidden>No hay proyectos que coincidan.</p>
   </section>
 
-  <section class="why">
-    <h2 class="section-title center">Lo que incluye cada sitio</h2>
+  <!-- ============ PROCESO ============ -->
+  <section class="proceso" id="proceso">
+    <div class="section-head center">
+      <span class="kicker">Cómo trabajamos</span>
+      <h2 class="section-title">De la idea a la página en vivo</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="step-n">01</span>
+        <h3>Nos cuentas tu negocio</h3>
+        <p>Menú, horarios, dirección y número de WhatsApp. Con eso armamos el contenido.</p>
+      </li>
+      <li>
+        <span class="step-n">02</span>
+        <h3>Diseñamos a la medida</h3>
+        <p>Tu nombre, tus colores, tus fotos. Nada de plantillas genéricas copiadas.</p>
+      </li>
+      <li>
+        <span class="step-n">03</span>
+        <h3>Lo probamos en celular</h3>
+        <p>Lo ves exactamente como lo verá tu cliente, en su teléfono Android.</p>
+      </li>
+      <li>
+        <span class="step-n">04</span>
+        <h3>Lo publicamos</h3>
+        <p>Te damos el link para compartirlo y lo dejamos funcionando en línea.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ INCLUYE ============ -->
+  <section class="incluye" id="incluye">
+    <div class="section-head center">
+      <span class="kicker">Lo que incluye</span>
+      <h2 class="section-title">Cada sitio viene con esto</h2>
+    </div>
     <div class="feats">
       <div class="feat">
-        <span class="feat-ic" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>
-        </span>
+        <span class="feat-ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
         <h3>Hecho para celular</h3>
         <p>Se ve bien en Android y en cualquier teléfono, que es donde están tus clientes.</p>
       </div>
       <div class="feat">
-        <span class="feat-ic" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-3.9-.9L3 21l1.9-4.9A8.4 8.4 0 0 1 4 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
-        </span>
+        <span class="feat-ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-3.9-.9L3 21l1.9-4.9A8.4 8.4 0 0 1 4 11.5 8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg></span>
         <h3>Pedidos por WhatsApp</h3>
         <p>Botón directo para que el cliente mande su pedido sin instalar nada.</p>
       </div>
       <div class="feat">
-        <span class="feat-ic" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
-        </span>
+        <span class="feat-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></span>
         <h3>En línea 24/7</h3>
         <p>Hosting y dominio incluidos. No dependes de que alguien te lo prende.</p>
       </div>
       <div class="feat">
-        <span class="feat-ic" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/></svg>
-        </span>
+        <span class="feat-ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/></svg></span>
         <h3>Que se vea premium</h3>
-        <p>Diseño a la medida, no plantillas. Se siente un negocio serio.</p>
+        <p>Diseño propio, no plantillas. Se siente un negocio serio.</p>
       </div>
     </div>
   </section>
 
+  <!-- ============ CTA ============ -->
   <section class="cta">
+    <span class="kicker">Siguiente paso</span>
     <h2>¿Quieres el tuyo?</h2>
     <p>Dinos qué negocio tienes y te armamos un sitio igual de bonito que estos,
        con tu nombre, tu menú y tu número de WhatsApp.</p>
@@ -310,8 +434,8 @@
 </main>
 
 <footer class="foot">
-  <p>Proyectos Exceptional Boy · Páginas de demostración reales, publicadas en Cloudflare Pages.</p>
-  <p class="foot-sm">Cada tarjeta abre un sitio independiente que creamos para su negocio.</p>
+  <p><strong>Proyectos Exceptional Boy</strong></p>
+  <p class="foot-sm">Páginas de demostración reales, publicadas en Cloudflare Pages. Cada tarjeta abre un sitio independiente que creamos para su negocio.</p>
 </footer>
 
 <script src="script.js"></script>

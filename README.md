@@ -1,21 +1,20 @@
 # Proyectos Exceptional Boy
 
-Portafolio público de los sitios web que hemos creado y publicado para negocios
+Portafolio público de los sitios web que creamos y publicamos para negocios
 locales de Hopelchén y la región. Cada tarjeta abre un sitio independiente que
 está funcionando en línea.
 
 ## Qué hay aquí
 
-- `index.html` — página del portafolio (sin build, HTML + CSS + JS estáticos)
+- `index.html` — página del portafolio. Sin build: HTML + CSS + JS estáticos.
 - `styles.css` — estilos
-- `script.js` — filtros por categoría, animaciones de entrada y contador
-- `thumbs/` — miniaturas móviles (390×844) de cada sitio
+- `script.js` — buscador, filtros por categoría, marquee, animaciones
+- `thumbs/` — 17 miniaturas móviles (390×844) de cada sitio
 
-## Los sitios
+## Los 17 sitios
 
 | Proyecto | Categoría | URL |
 |---|---|---|
-| Pizzas Claaudiss | Restaurante | https://pizzas-claaudiss.pages.dev |
 | Coctelería El Pescadito | Mariscos | https://cocteler-a-el-pescadito.pages.dev |
 | El Rey del Peperoni | Pizzería | https://el-rey-del-peperoni.pages.dev |
 | HoolKuum | Restaurante | https://hoolkuum.pages.dev |
@@ -25,23 +24,32 @@ está funcionando en línea.
 | El Camarón Feliz | Mariscos | https://el-camaron-feliz.pages.dev |
 | Monster Delicacies | Restaurante | https://monster-delicacies.pages.dev |
 | Asadero El Pollo | Asadero | https://demo1-3d3.pages.dev |
-| Pizzas Claaudiss (demo) | Demo | https://demo2-2ow.pages.dev |
+| Menú con carrito (demo) | Demo | https://demo2-2ow.pages.dev |
 | Cafetería del Parque | Cafetería | https://cafeteria-del-parque.pages.dev |
 | Sendero's | Panadería | https://sendero-s.pages.dev |
 | Hotel Los Chenes | Hotel | https://hotelchenes.pages.dev |
 | Odentica Hopelchén | Odontología | https://odentica-hopelchen.pages.dev |
 | UMyR | Clínica | https://umyr.pages.dev |
 | CYGR | Grabados láser | https://cygr.pages.dev |
-| Francisco Ontiveros | Portafolio | https://perfil-f2v.pages.dev |
 | Bonishop | Tienda | https://bonishop.pages.dev |
+
+## Notas técnicas
+
+- Los mockups de teléfono respetan la proporción real de pantalla (390/844).
+- Las miniaturas usan `loading="lazy"`; si una falla, la tarjeta muestra el
+  gradiente de color en su lugar.
+- Las URLs con sufijo (`demo1-3d3`, `demo2-2ow`, `la-capilla-8p4`) existen
+  porque el nombre corto ya estaba tomado a nivel global en Cloudflare Pages.
+- `prefers-reduced-motion` está respetado: sin animaciones si el usuario las
+  desactivó en su sistema.
 
 ## Publicación
 
-El sitio está en Cloudflare Pages como `proyectos-exceptional-boy`. No lleva
-comando de build: el directorio raíz es el que se publica.
+Cloudflare Pages, proyecto `proyectos-exceptional-boy`. Sin comando de build:
+se publica el directorio raíz.
 
 ## Contacto
 
 Las llamadas a la acción apuntan a <https://excepcional-build.pages.dev>.
-Para poner un número de WhatsApp propio en los botones, busca `excepcional-build.pages.dev`
+Para poner un número de WhatsApp propio, busca `excepcional-build.pages.dev`
 en `index.html` y reemplázalo por un enlace `https://wa.me/<tu-numero>`.
