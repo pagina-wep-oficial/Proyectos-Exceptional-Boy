@@ -1,8 +1,10 @@
-# Proyectos Exceptional Boy
+# PROJECT BUILD
 
 Portafolio público de los sitios web que creamos y publicamos para negocios
 locales de Hopelchén y la región. Cada tarjeta abre un sitio independiente que
 está funcionando en línea.
+
+**En línea:** https://project-build.pages.dev
 
 ## Qué hay aquí
 
@@ -45,8 +47,12 @@ está funcionando en línea.
 
 ## Publicación
 
-Cloudflare Pages, proyecto `proyectos-exceptional-boy`. Sin comando de build:
-se publica el directorio raíz.
+Cloudflare Pages, proyecto `project-build`. Sin comando de build: se publica el
+directorio raíz.
+
+```bash
+npx wrangler@4 pages deploy . --project-name=project-build --branch=main
+```
 
 ## Contacto
 
