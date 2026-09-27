@@ -54,7 +54,8 @@
     <ul class="hero-stats">
       <li><strong><span data-count="17">0</span></strong><span>Sitios publicados</span></li>
       <li><strong><span data-count="6">0</span></strong><span>Categorías</span></li>
-      <li><strong><span data-count="17">0</span></strong><span>Con menu y pedidos</span></li>
+        <li><strong><span data-count="17">0</span></strong><span>Hechos a medida</span></li>
+
     </ul>
   </section>
 
@@ -66,7 +67,7 @@
       <div class="marquee-run">
         <a class="phone" href="https://cocteler-a-el-pescadito.pages.dev" target="_blank" rel="noopener" aria-label="Coctelería El Pescadito"><span class="phone-screen"><img src="thumbs/cocteler-a-el-pescadito.jpg" alt="Coctelería El Pescadito" loading="lazy" decoding="async"></span></a>
         <a class="phone" href="https://hotelchenes.pages.dev" target="_blank" rel="noopener" aria-label="Hotel Los Chenes"><span class="phone-screen"><img src="thumbs/hotelchenes.jpg" alt="Hotel Los Chenes" loading="lazy" decoding="async"></span></a>
-        <a class="phone" href="https://la-capilla.pages.dev" target="_blank" rel="noopener" aria-label="La Capilla"><span class="phone-screen"><img src="thumbs/la-capilla.jpg" alt="La Capilla" loading="lazy" decoding="async"></span></a>
+        <a class="phone" href="https://la-capilla-8p4.pages.dev" target="_blank" rel="noopener" aria-label="La Capilla"><span class="phone-screen"><img src="thumbs/la-capilla.jpg" alt="La Capilla" loading="lazy" decoding="async"></span></a>
         <a class="phone" href="https://cygr.pages.dev" target="_blank" rel="noopener" aria-label="CYGR"><span class="phone-screen"><img src="thumbs/cygr.jpg" alt="CYGR" loading="lazy" decoding="async"></span></a>
         <a class="phone" href="https://odentica-hopelchen.pages.dev" target="_blank" rel="noopener" aria-label="Odentica Hopelchén"><span class="phone-screen"><img src="thumbs/odentica-hopelchen.jpg" alt="Odentica Hopelchén" loading="lazy" decoding="async"></span></a>
         <a class="phone" href="https://monster-delicacies.pages.dev" target="_blank" rel="noopener" aria-label="Monster Delicacies"><span class="phone-screen"><img src="thumbs/monster-delicacies.jpg" alt="Monster Delicacies" loading="lazy" decoding="async"></span></a>
@@ -100,7 +101,23 @@
       </nav>
     </div>
 
-    <div class="grid" id="grid">
+    <div class="rail-bar">
+      <p class="rail-hint">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-4 5 4 5"/><path d="M16 7l4 5-4 5"/><path d="M13 5l-2 14"/></svg>
+        Desliza las tarjetas con el dedo o arrástralas con el mouse
+      </p>
+      <div class="rail-nav">
+        <button class="rail-btn" id="railPrev" type="button" aria-label="Ver tarjetas anteriores" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="rail-btn" id="railNext" type="button" aria-label="Ver tarjetas siguientes">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div class="rail-track" id="railTrack" aria-hidden="true"><i id="railThumb"></i></div>
+    </div>
+
+    <div class="grid" id="grid" tabindex="0" role="region" aria-label="Galería de sitios. Desliza horizontalmente para ver los 17 proyectos.">
 
       <a class="card" data-cat="restaurantes" data-name="cocteleria el pescadito mariscos camarón" href="https://cocteler-a-el-pescadito.pages.dev" target="_blank" rel="noopener" style="--g1:#0CA9A9;--g2:#086F8C">
         <span class="card-stage">
