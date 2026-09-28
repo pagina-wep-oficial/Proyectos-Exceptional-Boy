@@ -119,15 +119,15 @@
 
   if (rail) {
     /* En escritorio la galeria es rejilla, no carrusel: sin arrastre ni flechas */
-    var wide = window.matchMedia('(min-width:1024px)');
+    var wide = window.matchMedia('(min-width:768px)');
 
     function syncMode() {
       if (wide.matches) {
-        rail.setAttribute('aria-label', 'Galería de sitios. Los 17 proyectos.');
+        rail.setAttribute('aria-label', 'Galería de proyectos web.');
         if (prevBtn) { prevBtn.disabled = true; }
         if (nextBtn) { nextBtn.disabled = true; }
       } else {
-        rail.setAttribute('aria-label', 'Galería de sitios. Desliza horizontalmente para ver los 17 proyectos.');
+        rail.setAttribute('aria-label', 'Galería de proyectos web. Desliza para explorar.');
         syncRail();
       }
     }
