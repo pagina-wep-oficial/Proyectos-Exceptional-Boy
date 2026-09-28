@@ -346,6 +346,25 @@ p{margin:0}
   .toolbar{flex-direction:row;align-items:center;justify-content:space-between}
   .search{max-width:290px}
 }
+
+/* A partir de escritorio la galeria deja de ser carrusel y se ve completa en
+   rejilla: con mouse nadie espera tener que deslizar a un lado para ver los
+   17 sitios. El carrusel se queda para celular y tablet. */
+@media (min-width:1024px){
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(248px,1fr));
+    overflow:visible;
+    scroll-snap-type:none;
+    scroll-behavior:auto;
+    padding:.5rem 0 0;
+    margin-inline:0;
+    cursor:default;
+  }
+  .card{flex-basis:auto}
+  .rail-bar{display:none}
+  .demos{padding-bottom:5rem}
+}
 @media (max-width:640px){
   .topnav{display:none}
   .topbar{padding:.68rem .9rem}

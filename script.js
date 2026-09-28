@@ -118,6 +118,21 @@
   var track = document.getElementById('railThumb');
 
   if (rail) {
+    /* En escritorio la galeria es rejilla, no carrusel: sin arrastre ni flechas */
+    var wide = window.matchMedia('(min-width:1024px)');
+
+    function syncMode() {
+      if (wide.matches) {
+        rail.setAttribute('aria-label', 'Galería de sitios. Los 17 proyectos.');
+        if (prevBtn) { prevBtn.disabled = true; }
+        if (nextBtn) { nextBtn.disabled = true; }
+      } else {
+        rail.setAttribute('aria-label', 'Galería de sitios. Desliza horizontalmente para ver los 17 proyectos.');
+        syncRail();
+      }
+    }
+    if (wide.addEventListener) { wide.addEventListener('change', function () { syncMode(); revealInRail(); }); }
+
     /* En un riel horizontal el observador de ventana no sirve: las tarjetas de
        la derecha nunca "entran" y se quedan invisibles. Aqui la raiz es el riel,
        y ademas se comprueba a mano en cada scroll para que nada quede oculto. */
@@ -177,9 +192,11 @@
     window.addEventListener('resize', syncRail);
     window.addEventListener('load', syncRail);
     syncRail();
+    syncMode();
 
     /* --- flechas: avanzan un ancho de tarjeta --- */
     function step(dir) {
+      if (wide.matches) { return; }
       var first = rail.querySelector('.card:not(.is-hidden)');
       var amount = first ? first.getBoundingClientRect().width + 18 : rail.clientWidth * 0.8;
       var max = rail.scrollWidth - rail.clientWidth;
@@ -212,6 +229,7 @@
     }
 
     rail.addEventListener('mousedown', function (e) {
+      if (wide.matches) { return; }
       if (e.button !== 0) { return; }
       dragging = true; moved = 0;
       startX = e.clientX; startLeft = rail.scrollLeft; lastPos = startLeft;
