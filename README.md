@@ -25,7 +25,7 @@ está funcionando en línea.
 | HoolKuum | Restaurante | https://hoolkuum.pages.dev |
 | Don Bonelito | Restaurante | https://don-bonelito.pages.dev |
 | La Palapa | Restaurante | https://la-palapa.pages.dev |
-| La Capilla | Restaurante | https://la-capilla-8p4.pages.dev |
+| La Capilla | Restaurante | https://la-capilla.paginawepoficial.workers.dev/ |
 | El Camarón Feliz | Mariscos | https://el-camaron-feliz.pages.dev |
 | Monster Delicacies | Restaurante | https://monster-delicacies.pages.dev |
 | Asadero El Pollo | Asadero | https://demo1-3d3.pages.dev |
@@ -43,8 +43,10 @@ está funcionando en línea.
 - Los mockups de teléfono respetan la proporción real de pantalla (390/844).
 - Las miniaturas usan `loading="lazy"`; si una falla, la tarjeta muestra el
   gradiente de color en su lugar.
-- Las URLs con sufijo (`demo1-3d3`, `demo2-2ow`, `la-capilla-8p4`) existen
+- Las URLs con sufijo (`demo1-3d3`, `demo2-2ow`) existen
   porque el nombre corto ya estaba tomado a nivel global en Cloudflare Pages.
+- La Capilla ya no usa Cloudflare Pages, sino su subdominio de Workers
+  `la-capilla.paginawepoficial.workers.dev`.
 - `prefers-reduced-motion` está respetado: sin animaciones si el usuario las
   desactivó en su sistema.
 
