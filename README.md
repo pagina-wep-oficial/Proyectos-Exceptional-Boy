@@ -1,4 +1,4 @@
-# PROJECT BUILD
+﻿# PROJECT BUILD
 
 Portafolio público de los sitios web que creamos y publicamos para negocios
 locales de Hopelchén y la región. Cada tarjeta abre un sitio independiente que
@@ -25,7 +25,7 @@ está funcionando en línea.
 | HoolKuum | Restaurante | https://hoolkuum.pages.dev |
 | Don Bonelito | Restaurante | https://don-bonelito.pages.dev |
 | La Palapa | Restaurante | https://la-palapa.pages.dev |
-| La Capilla | Restaurante | https://la-capilla.paginawepoficial.workers.dev/ |
+| La Capilla | Restaurante | https://la-capilla-mx.pages.dev/ |
 | El Camarón Feliz | Mariscos | https://el-camaron-feliz.pages.dev |
 | Monster Delicacies | Restaurante | https://monster-delicacies.pages.dev |
 | Asadero El Pollo | Asadero | https://demo1-3d3.pages.dev |
@@ -45,8 +45,8 @@ está funcionando en línea.
   gradiente de color en su lugar.
 - Las URLs con sufijo (`demo1-3d3`, `demo2-2ow`) existen
   porque el nombre corto ya estaba tomado a nivel global en Cloudflare Pages.
-- La Capilla ya no usa Cloudflare Pages, sino su subdominio de Workers
-  `la-capilla.paginawepoficial.workers.dev`.
+- La Capilla se publica desde su repo (`pagina-wep-oficial/La-Capilla`)
+  en el proyecto Pages `la-capilla-mx`: `https://la-capilla-mx.pages.dev`.
 - `prefers-reduced-motion` está respetado: sin animaciones si el usuario las
   desactivó en su sistema.
 
